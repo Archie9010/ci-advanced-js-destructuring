@@ -39,6 +39,19 @@ let { firstLanguage, thirdLanguage } = languages2;
 console.log(firstLanguage, thirdLanguage);
 
 // Using rest parameter syntax
-let fruits = ["apple", "bannana", "peach", "cherry"];
+let fruits = ["apple", "orange", "bannana", "peach", "cherry"];
 let [favorite, secondFavorite, ...others] = fruits;
-console.lo
+console.log(favorite);
+console.log(secondFavorite);
+console.log(others);
+
+let favoriteFoods = {
+    brian: "pizza",
+    anna: "pasta",
+    sarah: "vegetarian",
+    andrea: "steak"
+};
+let {brian, anna, ...rest} = favoriteFoods;
+console.log(brian);
+console.log(anna);
+console.log(rest);
